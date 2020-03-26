@@ -1,11 +1,11 @@
 <div class="container py-5">
     <h3 class="title-wthree mb-lg-5 mb-4 text-center">Shop Now</h3>
     <!--/row-->
-    <div class="row shop-wthree-info text-center"   *ngFor="let product of products">
+    <div class="row shop-wthree-info text-center"  >
 
 
       
-        <div class="col-lg-3 shop-info-grid text-center mt-4">
+        <div class="col-lg-3 shop-info-grid text-center mt-4" *ngFor="let product of products">
             <div class="product-shoe-info shoe">
                 <div class="men-thumb-item">
                     <img [src]="product.img" class="img-fluid" alt="">

@@ -29,6 +29,6 @@ export class ProductService {
     // console.log(this.products)
   }
   updateProduct(product){
-     return this.http.put<Product>(`${this.api}/${product.id}`, product);
+     return this.http.put<Product>(`${this.api}/${product.idproduct}`, product);
   }
 }

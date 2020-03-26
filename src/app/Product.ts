@@ -3,7 +3,6 @@ export class Product{
     name: string;
     price: number;
     desc: string;
-    quatity: number;
     status: boolean;
     img: string;
 }
