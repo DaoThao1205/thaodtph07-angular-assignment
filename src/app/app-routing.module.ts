@@ -4,6 +4,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
 import { HomeComponent } from './home/home.component';
+import { ProductEditComponent } from './product-edit/product-edit.component';
 
 
 
@@ -14,7 +15,7 @@ const routes: Routes = [
 
   {path: 'product', component: ProductListComponent},
   {path: 'product/:productID', component: ProductDetailComponent},
-
+  {path: 'product/edit/:productID', component: ProductEditComponent},
   {path: 'product/delete/:productID', component: ProductListComponent},
 
  // {path: 'product/:id', component: ProductDetailComponent},

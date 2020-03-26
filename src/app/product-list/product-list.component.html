@@ -1,24 +1,25 @@
 <div class="container py-5">
     <h3 class="title-wthree mb-lg-5 mb-4 text-center">Shop Now</h3>
     <!--/row-->
-    <div class="row shop-wthree-info text-center">
+    <div class="row shop-wthree-info text-center"   *ngFor="let product of products">
 
 
-
+      
         <div class="col-lg-3 shop-info-grid text-center mt-4">
             <div class="product-shoe-info shoe">
                 <div class="men-thumb-item">
-                    <img src="http://placehold.it/191x191" class="img-fluid" alt="">
+                    <img [src]="product.img" class="img-fluid" alt="">
 
                 </div>
                 <div class="item-info-product">
                     <h4>
-                        <a href="single.html">Messenger Bag </a>
+                        <a href="single.html">{{product.name}} </a>
                     </h4>
+                    <h6>{{product.desc}}</h6>
 
                     <div class="product_price">
                         <div class="grid-price">
-                            <span class="money"><span class="line">$799</span> $675.00</span>
+                            <span class="money">${{product.price}}</span>
                         </div>
                     </div>
                   
