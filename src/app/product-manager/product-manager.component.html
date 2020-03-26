@@ -5,7 +5,6 @@
       <th scope="col">Name </th>
       <th scope="col">Desc</th>
       <th scope="col">Price</th>
-      <th scope="col">Quatity</th>
       <th scope="col">Status</th>
       <th scope="col">Image</th>
       <th scope="col">Edit</th>
@@ -18,11 +17,10 @@
       <td>{{product.name}}</td>
       <td>{{product.desc}}</td>
       <td>{{product.price}}</td>
-      <td>{{product.quatity}}</td>
       <td>{{product.status}}</td>
       <td><img [src]="product.img" width="150px"></td>
-      <td><button class="btn btn-primary" routerLink="/product/edit/{{product.id}}" >Edit</button></td>
-      <td><button class="btn btn-primary" routerLink="/product/delete/{{product.id}}">Delete</button></td>
+      <td><button class="btn btn-primary" routerLink="/product/edit/{{product.idproduct}}" >Edit</button></td>
+      <td><button class="btn btn-primary" routerLink="/product/delete/{{product.idproduct}}">Delete</button></td>
     </tr>
   
   </tbody>
