@@ -12,12 +12,13 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ProductService } from './product.service';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
     HttpClientModule, AppRoutingModule],
 
-  declarations: [ AppComponent, HelloComponent, SlideComponent, GalleryComponent, ProductListComponent, ProductDetailComponent, ProductManagerComponent ],
+  declarations: [ AppComponent, HelloComponent, SlideComponent, GalleryComponent, ProductListComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent ],
   
   bootstrap:    [ AppComponent ],
   providers: [ProductService]

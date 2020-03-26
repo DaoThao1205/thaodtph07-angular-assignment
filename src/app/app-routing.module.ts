@@ -3,12 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
+import { HomeComponent } from './home/home.component';
 
 
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
-
+{path: 'home', component: HomeComponent},
   {path: 'manager', component: ProductManagerComponent},
 
   {path: 'product', component: ProductListComponent},
