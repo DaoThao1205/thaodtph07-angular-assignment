@@ -11,10 +11,11 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductService } from './product.service';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
-    HttpClientModule],
+    HttpClientModule, AppRoutingModule],
 
   declarations: [ AppComponent, HelloComponent, SlideComponent, GalleryComponent, ProductListComponent, ProductDetailComponent, ProductManagerComponent ],
   
