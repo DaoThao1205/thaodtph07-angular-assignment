@@ -17,7 +17,7 @@
       <th scope="row">{{product.idproduct}}</th>
       <td>{{product.name}}</td>
       <td>{{product.desc}}</td>
-      <td>{{product.price}}</td>
+      <td>${{product.price}}</td>
       <td>{{product.status}}</td>
       <td><img [src]="product.img" width="150px"></td>
       <td><button class="btn btn-warning" routerLink="/product/edit/{{product.idproduct}}" >Edit</button></td>
