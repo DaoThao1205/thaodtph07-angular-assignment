@@ -26,27 +26,8 @@ export class ProductManagerComponent implements OnInit {
     });
   }
   removeItem(id){
-   // this.products = this.productService.removeProduct(id);
-    // this.products = this.products.filter(product => product.id != id);
+    this.productService.removeProduct(id).subscribe(response =>{
+    this.products = this.products.filter(product => product.idproduct != response.id);
+    }) 
   }
-
-
-  // changeStatus(){
-  //   // this.product.status = !this.product.status;
-  // }
-  // changeName(e){
-  //   // this.product.name = e.target.value;
-  // }
-  // removeItem(id){
-  //   this.products = this.products.filter(product => product.id != id);
-  // }
-
-  // showDetail(product){
-  //   console.log(product);
-  //   this.selected = product;
-  // }
-  // Edit(product){
-    
-  // }
 }
-

@@ -21,7 +21,7 @@
       <td>{{product.status}}</td>
       <td><img [src]="product.img" width="150px"></td>
       <td><button class="btn btn-primary" routerLink="/product/edit/{{product.idproduct}}" >Edit</button></td>
-      <td><button class="btn btn-primary" routerLink="/product/delete/{{product.idproduct}}">Delete</button></td>
+      <td><button class="btn btn-primary" (click)="removeItem(product.idproduct)">Delete</button></td>
     </tr>
   
   </tbody>
