@@ -312,7 +312,7 @@ ul {
     padding: 1em;
 }.img-fluid {
     max-width: 100%;
-    height: auto;
+    height: 250px;
 }
 .item-info-product h4 a {
     color: #080808;
