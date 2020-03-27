@@ -1,7 +1,27 @@
-<h2>Product-Detail</h2><br><br>
- <div *ngIf="product">
-   <a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
-  <div class="card-body">
+<br>
+<h2>CHI TIẾT SẢN PHẨM</h2><br><br>
+<section class="banner-bottom py-5">
+        <div class="container py-md-5">
+            <!-- product right -->
+            <div class="left-ads-display wthree" style=" border: 4px solid orange;" *ngIf="product">
+                <div class="row">
+                    <div class="desc1-left col-md-6" >
+                        <a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
+                    </div>
+                    <div class="desc1-right col-md-6 pl-lg-3" style="margin-top: 100px;">
+                        <h3>{{product.name}}</h3>
+                        <h5>${{product.price}}</h5>
+                        <div class="available mt-3">
+                            <p>{{product.desc}}</p>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+  
+  <!-- <div class="card-body">
         <h4 class="card-title">
           <a href="#">{{product.name}}</a>
         </h4>
@@ -10,4 +30,4 @@
         <p class="card-text">{{product.status ? 'In stock': 'Out stock'}}</p>
       </div>
       
- </div>
+ </div> -->
