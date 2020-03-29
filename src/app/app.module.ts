@@ -19,12 +19,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AdminSlidebarComponent } from './admin-slidebar/admin-slidebar.component';
 import { AdminTopbarComponent } from './admin-topbar/admin-topbar.component';
+import { AdminProductListComponent } from './admin-product-list/admin-product-list.component';
+import { AdminProductAddComponent } from './admin-product-add/admin-product-add.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
     HttpClientModule, AppRoutingModule],
 
-  declarations: [ AppComponent, HelloComponent, SlideComponent, GalleryComponent, ProductListComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent, ProductEditComponent, ProductAddComponent, HeaderComponent, FooterComponent, AdminSlidebarComponent, AdminTopbarComponent ],
+  declarations: [ AppComponent, HelloComponent, SlideComponent, GalleryComponent, ProductListComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent, ProductEditComponent, ProductAddComponent, HeaderComponent, FooterComponent, AdminSlidebarComponent, AdminTopbarComponent, AdminProductListComponent, AdminProductAddComponent ],
   
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
