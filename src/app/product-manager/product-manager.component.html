@@ -1,3 +1,5 @@
+
+
 <br>
     <button type="submit" class="btn btn-outline-success btn-lg" style="margin-left:75px" routerLink="/add-product">Add Product</button>
     <br><br>
@@ -11,6 +13,7 @@
       <th scope="col">Price</th>
       <th scope="col">Status</th>
       <th scope="col">Image</th>
+      <th scope="col">View</th>
       <th scope="col">Edit</th>
       <th scope="col">Delete</th>
     </tr>
@@ -23,6 +26,7 @@
       <td>${{product.price}}</td>
       <td>{{product.status}}</td>
       <td><img [src]="product.img" width="150px"></td>
+      <td><button class="btn btn-warning" routerLink="/product/{{product.idproduct}}" >view</button></td>
       <td><button class="btn btn-warning" routerLink="/product/edit/{{product.idproduct}}" >Edit</button></td>
       <td><button class="btn btn-danger" (click)="removeItem(product.idproduct)">Delete</button></td>
     </tr>

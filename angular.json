@@ -24,7 +24,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/css/all.min.css"
+              "src/css/sb-admin-2.min.css"
             ],
             "scripts": []
           },
