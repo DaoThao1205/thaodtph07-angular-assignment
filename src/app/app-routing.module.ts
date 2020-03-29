@@ -6,13 +6,14 @@ import { ProductManagerComponent } from './product-manager/product-manager.compo
 import { HomeComponent } from './home/home.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductAddComponent } from './product-add/product-add.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
-  {path: 'manager', component: ProductManagerComponent},
+  {path: 'manager', component: AdminComponent},
   {path: 'add-product', component: ProductAddComponent},
   {path: 'product', component: ProductListComponent},
   {path: 'product/:productID', component: ProductDetailComponent},

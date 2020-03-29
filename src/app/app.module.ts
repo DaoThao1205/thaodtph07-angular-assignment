@@ -17,12 +17,14 @@ import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminProductListComponent } from './admin-product-list/admin-product-list.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
     HttpClientModule, AppRoutingModule],
 
-  declarations: [ AppComponent, HelloComponent, SlideComponent, GalleryComponent, ProductListComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent, ProductEditComponent, ProductAddComponent, HeaderComponent, FooterComponent ],
+  declarations: [ AppComponent, HelloComponent, SlideComponent, GalleryComponent, ProductListComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent, ProductEditComponent, ProductAddComponent, HeaderComponent, FooterComponent, AdminComponent, AdminProductListComponent ],
   
   bootstrap:    [ AppComponent ],
   providers: [ProductService]

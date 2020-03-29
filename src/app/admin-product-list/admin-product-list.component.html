@@ -1,0 +1,24 @@
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Desc</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">View</th>
+      <th scope="col">Eidt</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <th scope="row">{{product.id}}</th>
+      <td>{{product.name}}</td>
+      <td>{{product.desc}}</td>
+      <td>${{product.quantity}}</td>
+      <td><button  routerLink="/product/{{product.id}}">view</button></td>
+      <td><button>Edit</button></td>
+      <td><button>Delete</button></td>
+    </tr>
+  </tbody>
+</table>
