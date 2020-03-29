@@ -17,7 +17,6 @@ import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { AdminComponent } from './admin/admin.component';
 import { AdminSlidebarComponent } from './admin-slidebar/admin-slidebar.component';
 import { AdminTopbarComponent } from './admin-topbar/admin-topbar.component';
 
@@ -25,7 +24,7 @@ import { AdminTopbarComponent } from './admin-topbar/admin-topbar.component';
   imports:      [ BrowserModule, FormsModule,
     HttpClientModule, AppRoutingModule],
 
-  declarations: [ AppComponent, HelloComponent, SlideComponent, GalleryComponent, ProductListComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent, ProductEditComponent, ProductAddComponent, HeaderComponent, FooterComponent, AdminComponent, AdminSlidebarComponent, AdminTopbarComponent ],
+  declarations: [ AppComponent, HelloComponent, SlideComponent, GalleryComponent, ProductListComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent, ProductEditComponent, ProductAddComponent, HeaderComponent, FooterComponent, AdminSlidebarComponent, AdminTopbarComponent ],
   
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
