@@ -6,7 +6,7 @@ import { ProductManagerComponent } from './product-manager/product-manager.compo
 import { HomeComponent } from './home/home.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductAddComponent } from './product-add/product-add.component';
-import { AdminComponent } from './admin/admin.component';
+import { AdminComponent } from './admin-list-product/admin.component';
 
 
 
