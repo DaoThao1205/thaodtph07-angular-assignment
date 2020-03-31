@@ -1,0 +1,33 @@
+.contact_right, .contact_left {
+    border: 2px solid #f7f7f7;
+}
+.content-input-field input {
+    font-size: 16px;
+    font-weight: 300;
+    color: #888;
+    letter-spacing: 1px;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    background: rgba(0, 123, 255, 0.06);
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 0px;
+}
+textarea {
+    min-height: 120px;
+    resize: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: #888;
+    letter-spacing: 1px;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    background: rgba(0, 123, 255, 0.06);
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 0px;
+}

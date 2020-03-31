@@ -21,12 +21,14 @@ import { AdminSlidebarComponent } from './admin-slidebar/admin-slidebar.componen
 import { AdminTopbarComponent } from './admin-topbar/admin-topbar.component';
 import { AdminProductListComponent } from './admin-product-list/admin-product-list.component';
 import { AdminProductAddComponent } from './admin-product-add/admin-product-add.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
     HttpClientModule, AppRoutingModule],
 
-  declarations: [ AppComponent, HelloComponent, SlideComponent, GalleryComponent, ProductListComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent, ProductEditComponent, ProductAddComponent, HeaderComponent, FooterComponent, AdminSlidebarComponent, AdminTopbarComponent, AdminProductListComponent, AdminProductAddComponent ],
+  declarations: [ AppComponent, HelloComponent, SlideComponent, GalleryComponent, ProductListComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent, ProductEditComponent, ProductAddComponent, HeaderComponent, FooterComponent, AdminSlidebarComponent, AdminTopbarComponent, AdminProductListComponent, AdminProductAddComponent, AboutUsComponent, ContactComponent ],
   
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
