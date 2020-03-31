@@ -5,4 +5,5 @@ export class Product{
     desc: string;
     status: boolean;
     img: string;
+    detail: string;
 }

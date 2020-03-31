@@ -7,6 +7,7 @@
       <th scope="col">Name </th>
       <th scope="col">Desc</th>
       <th scope="col">Price</th>
+      <th scope="col">Detail</th>
       <th scope="col">Status</th>
       <th scope="col">Image</th>
       <th scope="col">View</th>
@@ -20,6 +21,7 @@
       <td>{{product.name}}</td>
       <td>{{product.desc}}</td>
       <td>${{product.price}}</td>
+      <td>{{product.detail}}</td>
       <td>{{product.status}}</td>
       <td><img [src]="product.img" width="150px"></td>
       <td><button class="btn btn-warning" routerLink="/product/{{product.idproduct}}" >view</button></td>
