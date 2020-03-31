@@ -10,17 +10,39 @@
                     </div>
                     <div class="desc1-right col-md-6 pl-lg-3" style="margin-top: 90px;">
                         <h3>{{product.name}}</h3>
+                        
+
+                      <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                         <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                      </span><br>
                         <span class="money">${{product.price}}</span>
                         <div class="available mt-3">
                             <p>{{product.desc}}</p>
                         </div>
-                        <div class="available mt-3">
-                            <button class="btn btn-warning">Add to cart</button>
+                        <div class="input-group col-md-6 d-flex mb-3">
+	             	<span class="input-group-btn mr-2">
+	                	<button type="button" class="quantity-left-minus btn" data-type="minus" data-field="">
+	                   <i class="ion-ios-remove"></i>
+	                	</button>
+	            		</span>
+	             	<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+	             	<span class="input-group-btn ml-2">
+	                	<button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
+	                     <i class="ion-ios-add"></i>
+	                 </button>
+	             	</span>
+	          	</div>
+                        <div class="available mt-3"> 
+                            <button  class="btn btn-warning">Buy Now</button>
                         </div>
                         <br>
                 </div>
                 <hr><br>
-                <div class="available mt-3">
+                <div class="available mt-3" style="border: 1px solid #ddd;">
                             <p>{{product.detail}}</p>
                         </div>
             </div>
