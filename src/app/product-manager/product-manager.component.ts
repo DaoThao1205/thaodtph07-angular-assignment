@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import { Product } from '../Product';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-manager',
@@ -9,8 +10,10 @@ import { Product } from '../Product';
 })
 
 export class ProductManagerComponent implements OnInit {
+ 
   products: Product[];
   constructor(
+     private router: Router,
     private productService: ProductService
   ) {
     console.log('constructor')
@@ -28,6 +31,7 @@ export class ProductManagerComponent implements OnInit {
   removeItem(id){
     this.productService.removeProduct(id).subscribe(response =>{
     this.products = this.products.filter(product => product.idproduct != response.id);
+    this.router.navigateByUrl("/product")
     }) 
   }
 }
