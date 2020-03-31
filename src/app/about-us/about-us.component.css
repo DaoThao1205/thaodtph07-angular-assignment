@@ -1,3 +1,7 @@
 p {
     margin-bottom: 20px;
 }
+.page-main-content{
+  width: 95%;
+  margin: auto;
+}
