@@ -340,3 +340,233 @@ span.line {
     color: #999;
     font-weight: 300;
 }
+
+
+/* banner */
+.ab-content-img {
+    background: url("https://uk.louisvuitton.com/images/is/image/lv/1/VE_DI3_L/louis-vuitton--Louis_Vuitton_185_Michelle_Williams_advertising_campaign_1_DI3.jpg?wid=1200&hei=630") no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 27em;
+}
+.title-wthree,
+.title-wthree.two {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 0.7em;
+    font-weight: 600;
+}
+
+.title-wthree.two {
+    color: #fff;
+}
+
+.ab-content h4 {
+    font-size: 1.2em;
+    color: #4c4d4e;
+    margin: 2em 0 1em 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.ab-info-con {
+    padding: 0 0.5em;
+}
+
+.ab-info-con.ab-inf-page h4 {
+    font-size: 1.4em;
+    color: #4c4d4e;
+    margin: 0em 0 1.2em 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.ab-info-con.ab-inf-page {
+    margin-top: 7em;
+}
+
+/*--//about--*/
+/*--blogs--*/
+
+/*--//blogs--*/
+/*--/mid--*/
+.bottom-w3pvt-left {
+    position: relative;
+}
+
+h4.text-wthree {
+    font-size: 2em;
+    color: #fff;
+    font-weight: 300;
+}
+
+.pos-wthree {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+}
+
+.pos-w3pvt {
+    right: 10%;
+    position: absolute;
+    bottom: 20%;
+}
+
+h4.text-w3pvt {
+
+    font-size: 2em;
+    color: #fff;
+    font-weight: 300;
+}
+
+/*--//mid--*/
+
+/*--/collection--*/
+
+
+/*--//collection--*/
+/* gallery page */
+.gal-img img,
+.popup img {
+    width: 100%;
+}
+
+/* popup */
+.popup-effect {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 0ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+}
+
+.popup-effect:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    background: #fff;
+    border-radius: 4px;
+    max-width: 430px;
+    position: relative;
+    margin: 8em auto;
+    padding: 3em 2em;
+    z-index: 999;
+    text-align: center;
+}
+
+.popup .close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* //popup */
+/* //gallery page */
+/*--/shipping-grids--*/
+.shiopping-w3pvt-gd {
+    background: #080808;
+    padding: 2em;
+}
+
+.shiopping-w3pvt-gd.sec {
+    background: #333;
+}
+
+.shiopping-w3pvt-gd:hover {
+    background: #74d2e7;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.shiopping-w3pvt-gd h3 {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.icon-gd span {
+    font-size: 2em;
+    text-align: center;
+    color: #ec1c24;
+    margin-bottom: 0.3em;
+}
+
+/*--//shipping-grids--*/
+/*--/newsletter--*/
+.newsletter-w3pvt,
+.collections {
+    background: #f7f7f7;
+}
+
+.newsletter-w3pvt form {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.newsletter-w3pvt p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    color: #777;
+    font-weight: 600;
+}
+
+.subscribe-sec input {
+
+    padding: 0.85em 1em;
+    color: #495057;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+    -moz-box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn.submit {
+    background: #74d2e7;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    color: #fff;
+    padding: 0.8em 3em;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    font-weight: 600;
+    -moz-box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 3px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn.submit:hover,
+.btn.shop:hover {
+    opacity: 0.9;
+}
+
