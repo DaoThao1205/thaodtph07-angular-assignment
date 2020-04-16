@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              
               "src/styles.css",
               "src/css/sb-admin-2.min.css"
             ],
