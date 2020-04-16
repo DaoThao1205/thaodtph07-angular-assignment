@@ -15,10 +15,9 @@
     <tr *ngFor="let product of products">
       <th scope="row">{{product.idproduct}}</th>
       <td>{{product.name}}</td>
-      
       <td><img [src]="product.img" width="150px"></td>
       <td><button class="btn btn-primary" routerLink="/product/{{product.idproduct}}" >view</button></td>
-      <td><button class="btn btn-warning" routerLink="/product/edit/{{product.idproduct}}" >Edit</button></td>
+      <td><button class="btn btn-warning" routerLink="/admin/edit-product/{{product.idproduct}}" >Edit</button></td>
       <td><button class="btn btn-danger" (click)="removeItem(product.idproduct)">Delete</button></td>
     </tr>
   
