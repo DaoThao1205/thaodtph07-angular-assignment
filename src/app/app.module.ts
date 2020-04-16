@@ -19,17 +19,16 @@ import { HeaderComponent } from './frontend/header/header.component';
 import { FooterComponent } from './frontend/footer/footer.component';
 import { AdminSlidebarComponent } from './backend/admin-slidebar/admin-slidebar.component';
 import { AdminTopbarComponent } from './backend/admin-topbar/admin-topbar.component';
-import { AdminProductListComponent } from './backend/admin-product-list/admin-product-list.component';
-import { AdminProductAddComponent } from './backend/admin-product-add/admin-product-add.component';
 import { AboutUsComponent } from './frontend/about-us/about-us.component';
 import { ContactComponent } from './frontend/contact/contact.component';
 import { AdminComponent } from './backend/admin/admin.component';
+import { DashboardComponent } from './backend/dashboard/dashboard.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
     HttpClientModule, AppRoutingModule],
 
-  declarations: [ AppComponent, HelloComponent, SlideComponent, GalleryComponent, ProductListComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent, ProductEditComponent, ProductAddComponent, HeaderComponent, FooterComponent, AdminSlidebarComponent, AdminTopbarComponent, AdminProductListComponent, AdminProductAddComponent, AboutUsComponent, ContactComponent, AdminComponent ],
+  declarations: [ AppComponent, HelloComponent, SlideComponent, GalleryComponent, ProductListComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent, ProductEditComponent, ProductAddComponent, HeaderComponent, FooterComponent, AdminSlidebarComponent, AdminTopbarComponent, AboutUsComponent, ContactComponent, AdminComponent, DashboardComponent ],
   
   bootstrap:    [ AppComponent ],
   providers: [ProductService]

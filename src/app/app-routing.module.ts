@@ -10,15 +10,22 @@ import { AdminProductListComponent } from './backend/admin-product-list/admin-pr
 import { AdminProductAddComponent } from './backend/admin-product-add/admin-product-add.component';
 import { AboutUsComponent } from './frontend/about-us/about-us.component';
 import { ContactComponent } from './frontend/contact/contact.component';
+import { AdminComponent } from './backend/admin/admin.component';
+import { DashboardComponent } from './backend/dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
+   {path: 'admin', component: AdminComponent,
+      children: [
+        { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+        { path: 'dashboard', component: DashboardComponent},
+        { path: 'products', component: AdminProductListComponent},
+        { pat}
+      ]
+   },
   {path: 'contact', component: ContactComponent},
   {path: 'aboutus', component: AboutUsComponent},
-  {path: 'manager', redirectTo: 'manager/product', pathMatch: 'full'},
-  {path: 'manager/product', component: AdminProductListComponent},
-  {path: 'manager/add-product', component: AdminProductAddComponent},
   {path: 'product', component: ProductListComponent},
   {path: 'product/:productID', component: ProductDetailComponent},
   {path: 'product/edit/:productID', component: ProductEditComponent},
