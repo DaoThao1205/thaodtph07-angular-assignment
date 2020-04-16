@@ -6,12 +6,11 @@ import { ProductManagerComponent } from './backend/product-manager/product-manag
 import { HomeComponent } from './frontend/home/home.component';
 import { ProductEditComponent } from './backend/product-edit/product-edit.component';
 import { ProductAddComponent } from './backend/product-add/product-add.component';
-import { AdminProductListComponent } from './backend/admin-product-list/admin-product-list.component';
-import { AdminProductAddComponent } from './backend/admin-product-add/admin-product-add.component';
 import { AboutUsComponent } from './frontend/about-us/about-us.component';
 import { ContactComponent } from './frontend/contact/contact.component';
 import { AdminComponent } from './backend/admin/admin.component';
 import { DashboardComponent } from './backend/dashboard/dashboard.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -20,8 +19,9 @@ const routes: Routes = [
       children: [
         { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
         { path: 'dashboard', component: DashboardComponent},
-        { path: 'products', component: AdminProductListComponent},
-        { pat}
+        { path: 'products', component: ProductManagerComponent},
+        { path: 'add-product', component: ProductAddComponent},
+        { path: 'edit-product/:productID', component: ProductEditComponent},
       ]
    },
   {path: 'contact', component: ContactComponent},
