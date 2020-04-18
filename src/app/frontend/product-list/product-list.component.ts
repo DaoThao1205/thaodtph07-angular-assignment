@@ -8,6 +8,8 @@ import { Product } from '../../Product';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
+page= 1;
+pageSize=6;
   selected: Product;
   products: Product[];
 

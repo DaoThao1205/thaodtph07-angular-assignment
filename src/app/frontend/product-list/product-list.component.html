@@ -4,7 +4,7 @@
     <h3 class="title-wthree mb-lg-5 mb-4 text-center text-white font-italic">CENTIMET</h3>
     <!--/row-->
     <div class="row shop-wthree-info text-center"  >
-        <div class="col-lg-3 shop-info-grid text-center mt-4" *ngFor="let product of products">
+        <div class="col-lg-3 shop-info-grid text-center mt-4" *ngFor="let product of products | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize ">
            <a routerLink="/product/{{product.idproduct}}">
            <div class="product-shoe-info shoe hover1" style="height:500px">
                 <div class="men-thumb-item " style="height=255px">
@@ -36,4 +36,9 @@
         <!--//row-->
     </div>
 </div>
+
+ <ngb-pagination
+  [(page)]="page"
+  [pageSize]="pageSize" class="d-flex justify-content-center"
+  [collectionSize]="products.length"></ngb-pagination>
 <app-footer></app-footer>
