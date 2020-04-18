@@ -9,7 +9,7 @@ import { Product } from '../../Product';
 })
 export class ProductListComponent implements OnInit {
 page= 1;
-pageSize=8;
+pageSize= 8;
   selected: Product;
   products: Product[];
 
