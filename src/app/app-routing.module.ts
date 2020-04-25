@@ -10,11 +10,15 @@ import { AboutUsComponent } from './frontend/about-us/about-us.component';
 import { ContactComponent } from './frontend/contact/contact.component';
 import { AdminComponent } from './backend/admin/admin.component';
 import { DashboardComponent } from './backend/dashboard/dashboard.component';
+import { LoginComponent } from './backend/login/login.component';
+import { DangkyComponent } from './backend/dangky/dangky.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
+  {path: 'login', component: LoginComponent},
+   {path: 'dangky', component: DangkyComponent},
    {path: 'admin', component: AdminComponent,
       children: [
         { path: '', redirectTo: 'dashboard', pathMatch: 'full'},

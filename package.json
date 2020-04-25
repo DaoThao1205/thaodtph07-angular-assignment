@@ -7,14 +7,15 @@
     "@angular/compiler": "8.0.0",
     "@angular/core": "8.0.0",
     "@angular/forms": "8.0.0",
-    "@angular/localize": "^9.0.0",
+    "@angular/localize": "9.1.2",
     "@angular/platform-browser": "8.0.0",
     "@angular/platform-browser-dynamic": "8.0.0",
     "@angular/router": "8.0.0",
-    "@ng-bootstrap/ng-bootstrap": "^6.0.3",
+    "@ng-bootstrap/ng-bootstrap": "6.0.3",
     "core-js": "2.6.9",
     "rxjs": "6.5.2",
-    "tslib": "^1.10.0",
+    "src": "^1.1.2",
+    "tslib": "1.11.1",
     "zone.js": "0.9.1"
   },
   "scripts": {

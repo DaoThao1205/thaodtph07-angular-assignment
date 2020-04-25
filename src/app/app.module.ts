@@ -23,13 +23,16 @@ import { AboutUsComponent } from './frontend/about-us/about-us.component';
 import { ContactComponent } from './frontend/contact/contact.component';
 import { AdminComponent } from './backend/admin/admin.component';
 import { DashboardComponent } from './backend/dashboard/dashboard.component';
+import { LoginComponent } from './backend/login/login.component';
+import { DangkyComponent } from './backend/dangky/dangky.component';
+import { UserService } from './user.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpClientModule, AppRoutingModule,NgbModule],
 
-  declarations: [ AppComponent, HelloComponent, SlideComponent, GalleryComponent, ProductListComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent, ProductEditComponent, ProductAddComponent, HeaderComponent, FooterComponent, AdminSlidebarComponent, AdminTopbarComponent, AboutUsComponent, ContactComponent, AdminComponent, DashboardComponent ],
+  declarations: [ AppComponent, HelloComponent, SlideComponent, GalleryComponent, ProductListComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent, ProductEditComponent, ProductAddComponent, HeaderComponent, FooterComponent, AdminSlidebarComponent, AdminTopbarComponent, AboutUsComponent, ContactComponent, AdminComponent, DashboardComponent, LoginComponent, DangkyComponent ],
   
   bootstrap:    [ AppComponent ],
-  providers: [ProductService]
+  providers: [ProductService, UserService]
 })
 export class AppModule { }
